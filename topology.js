@@ -2,13 +2,10 @@ module.exports = {
   name: 'attak-example',
   processors: {
     hello_world_spout: {
-      source: './processors/hello_world_spout',
-      outputs: ['text']
+      source: './processors/hello_world_spout'
     },
     reverse: {
-      source: './processors/reverse',
-      inputs: ['text'],
-      outputs: ['text']
+      source: './processors/reverse'
     }
   },
   streams: [
